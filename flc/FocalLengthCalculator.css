@@ -15,7 +15,6 @@ body {
 }
 
 table {
-	width: 100%;
 	border-spacing: 0px;
 	border-collapse: collapse;
 }
@@ -32,4 +31,9 @@ table td {
 	background: white;
 	border: solid 1px black;
 	text-align: right;
+}
+
+@media screen and (max-width: 480px) {
+table {
+	width: 100%;
 }
