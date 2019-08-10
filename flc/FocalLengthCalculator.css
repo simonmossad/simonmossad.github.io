@@ -1,0 +1,19 @@
+.inputtext {
+	width: 4em;
+	text-align: right;
+}
+
+table {
+	text-align: right;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+table th {
+	background: #606060;
+	color: #FFFFFF;
+}
+
+table th, table td {
+	border: solid 1px #000000;
+}

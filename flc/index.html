@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>焦点距離計算機 for花火撮影</title>
+	<link rel="stylesheet" href="./FocalLengthCalculator.css">
+	<script type="text/javascript" src="./FocalLengthCalculator.js"></script>
+</head>
+<body>
+	<div>センサータイプ: <select id="sensorsizelist" onchange="setSensorSize();"></select></div>
+	<div>
+		センサーサイズ: <input id="sensorwidth" class="inputtext" type="text">mm × <input id="sensorheight" class="inputtext" type="text">mm
+	</div>
+	<div>筒までの距離: <input id="distance" class="inputtext" type="text" value="300">m</div>
+	<input type="button" value="焦点距離計算" onclick="calcForcalLength()" />
+	<hr />
+	<table id="result">
+		<tr><th>大きさ</th><th>仰角(度)</th><th>焦点距離mm(横)</th><th>焦点距離mm(縦)</th></tr>
+	</table>
+	<script type="text/javascript">
+		window.onload = createSensorSizeOption();
+	</script>
+</body>
+</html>
