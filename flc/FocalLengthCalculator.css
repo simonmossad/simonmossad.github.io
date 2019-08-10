@@ -1,19 +1,35 @@
+body {
+	background: #FFFFE0;
+}
+
 .inputtext {
 	width: 4em;
 	text-align: right;
+	border: solid 1px black;
+}
+
+.calcbutton {
+	font-size: 110%;
+	border: solid 1px black;
+	border-radius: 5px;
 }
 
 table {
-	text-align: right;
+	width: 100%;
 	border-spacing: 0px;
 	border-collapse: collapse;
 }
 
 table th {
 	background: #606060;
-	color: #FFFFFF;
+	border: solid 1px black;
+	color: white;
+	font-size: 90%;
+	text-align: center;
 }
 
-table th, table td {
-	border: solid 1px #000000;
+table td {
+	background: white;
+	border: solid 1px black;
+	text-align: right;
 }
