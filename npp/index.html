@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<title>NOTAM PLACE POINTER</title>
+	<link rel="stylesheet" href="./NotamPlacePointer.css">
+	<script type="text/javascript" src="./NotamPlacePointer.js"></script>
+</head>
+<body>
+	<div>PLACE: <input id="notamplace" class="inputtext" type="search" placeholder="e.g. 350538N1390452E"> </div>
+	<div>MAP: <select id="maptype"></select> <input type="button" value="Open" onclick="openMap()"></div>
+	<script type="text/javascript">
+		window.onload = createMapTypeOption();
+	</script>
+</body>
+</html>

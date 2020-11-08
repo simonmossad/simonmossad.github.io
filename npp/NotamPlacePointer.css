@@ -1,0 +1,14 @@
+body {
+	background: #FFFFE0;
+}
+
+.inputtext {
+	width: 11em;
+	text-align: left;
+	border: solid 1px black;
+}
+
+@media screen and (max-width: 480px) {
+table {
+	width: 100%;
+}
