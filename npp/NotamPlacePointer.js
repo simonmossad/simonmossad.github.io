@@ -22,7 +22,7 @@ function openMap() {
 	var notamplace = document.getElementById("notamplace").value;
 	
 	// 緯度経度を度に変換
-	var match = notamplace.match(/([0-9]{6})N([0-9]{7})E/);
+	var match = notamplace.match(/([0-9]{6}[\.0-9]*)N([0-9]{7}[\.0-9]*)E/);
 	if (! match || match.length != 3) {
 		alert("Invalid NOTAM PLACE: " + notamplace);
 		return;
@@ -56,9 +56,9 @@ function openMap() {
 
 // 度分秒を度に変換
 function dms2deg(dms) {
-	var degree = parseInt(dms.substr(0, dms.length - 4));
-	var minute = parseInt(dms.substr(-4, 2));
-	var second = parseInt(dms.substr(-2, 2));
+	var degree = Math.floor(parseFloat(dms) / 10000);
+	var minute = Math.floor(parseFloat(dms) / 100) % 100;
+	var second = parseFloat(dms) - degree * 10000 - minute * 100;
 	
 	return degree + minute / 60 + second / 3600;
 }
