@@ -65,7 +65,7 @@ function dms2deg(dms) {
 
 // GoogleMAPのURLを生成
 function getGoogleUrl(lat, lon) {
-	return "https://www.google.co.jp/maps?q=" + lat + "," + lon;
+	return "https://www.google.co.jp/maps?q=" + lat + "," + lon + "&t=h";
 }
 
 // Yahoo! MAPのURLを生成
